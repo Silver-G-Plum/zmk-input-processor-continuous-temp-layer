@@ -1,0 +1,23 @@
+description: |
+  Input processor that activates a temporary ZMK layer after
+  continuous relative input has been detected.
+
+compatible: "zmk,input-processor-continuous-temp-layer"
+
+include: base.yaml
+
+properties:
+  continuous-ms:
+    type: int
+    required: true
+    description: |
+      Time in milliseconds that relative input must continue
+      before the temporary layer is activated.
+
+  max-gap-ms:
+    type: int
+    required: false
+    default: 20
+    description: |
+      Maximum allowed gap between relative input events while
+      the input is considered continuous.
