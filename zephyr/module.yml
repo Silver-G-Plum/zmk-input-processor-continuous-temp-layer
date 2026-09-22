@@ -1,0 +1,7 @@
+name: zmk_input_processor_continuous_temp_layer
+
+build:
+  cmake: .
+  kconfig: Kconfig
+  settings:
+    dts_root: .
