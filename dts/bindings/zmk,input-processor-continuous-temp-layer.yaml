@@ -6,6 +6,10 @@ compatible: "zmk,input-processor-continuous-temp-layer"
 
 include: base.yaml
 
+input-processor-cells:
+  - layer
+  - timeout
+
 properties:
   continuous-ms:
     type: int
@@ -16,7 +20,6 @@ properties:
 
   max-gap-ms:
     type: int
-    required: false
     default: 50
     description: |
       Maximum allowed gap between relative input events while
