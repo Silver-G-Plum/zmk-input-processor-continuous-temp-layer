@@ -24,3 +24,8 @@ properties:
     description: |
       Maximum allowed gap between relative input events while
       the input is considered continuous.
+
+  track-remainders:
+    type: boolean
+    description: |
+      Allow the input listener to track remainders for this processor.
