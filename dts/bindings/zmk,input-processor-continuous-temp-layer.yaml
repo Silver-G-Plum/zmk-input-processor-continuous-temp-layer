@@ -7,10 +7,6 @@ compatible: "zmk,input-processor-continuous-temp-layer"
 include: base.yaml
 
 properties:
-  "#input-processor-cells":
-    type: int
-    const: 2
-
   continuous-ms:
     type: int
     required: true
